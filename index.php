@@ -26,5 +26,16 @@ if (isset($_POST["acao"])) {
         <input type="file" name="file"/>
         <input type="submit" name="acao" value="enviar"/>
     </form>
+    <hr>
+<?php
+    $imagens = scandir('uploads');
+    foreach ($imagens as $imagem) {
+        if ($imagem !== '.' && $imagem !== '..') {
+            echo "<div style='margin-bottom: 10px;'>";
+            echo "<img src='uploads/$imagem' width='300' height='300' alt='Imagem'>";
+            echo "</div>";
+        }
+    }
+?>
 </body>
 </html>
