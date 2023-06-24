@@ -26,5 +26,6 @@ if (isset($_POST["acao"])) {
         <input type="file" name="file"/>
         <input type="submit" name="acao" value="enviar"/>
     </form>
+    <a href="pagina-de-formulario.php"><button>Página de Formulário</button></a
 </body>
 </html>
